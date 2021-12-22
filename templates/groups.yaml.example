@@ -1,0 +1,28 @@
+groups:
+  - name: world
+    proto: tcp
+    ports: 80,443
+    ips: any
+  - name: allowed_ssh
+    proto: tcp
+    ports: 22
+    ips:
+      - all_ips.static_ips.vpn ip
+      - all_ips.static_ips.office ip
+  - name: mysql
+    proto: tcp
+    ports: 22
+    ips:
+      - all_ips.servers.server_one_com
+  - name: some_ports
+    proto: tcp
+    ports: 5432,5433,10050
+    ips:
+      - all_ips.static_ips.home ip 1
+      - all_ips.servers.server_two_com
+  - name: some_any
+    proto: any
+    ports: any
+    ips:
+      - all_ips.static_ips.home ip 2
+      - all_ips.servers.server_one_com

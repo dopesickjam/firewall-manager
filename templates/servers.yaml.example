@@ -1,11 +1,10 @@
-group:
-  group_one:
-    home ip 1: 127.0.0.1
-    home ip 2: 172.0.0.1
-  backup_server:
-    backup_example_com: 192.168.0.100
-    another_server_com: 192.168.0.105
-  all_servers:
-    server_1_com: 192.168.0.101
-    server_2_com: 192.168.0.102
-    server_3_com: 192.168.0.103
+all_ips:
+  static_ips:
+    home ip 1: 192.168.0.10
+    home ip 2: 192.168.0.20
+    vpn ip: 192.168.0.30
+    office ip: 192.168.0.40
+  servers:
+    server_one_com: 10.10.0.10
+    server_two_com: 10.10.0.20
+    example_server_come: 10.10.0.30

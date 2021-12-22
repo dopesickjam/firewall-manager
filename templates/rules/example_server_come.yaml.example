@@ -1,0 +1,9 @@
+ufw_simple:
+  host: all_ips.servers.example_server_come
+  user_ssh: root
+  port_ssh: 22
+  enabled: True
+  allow:
+    - world
+    - allowed_ssh
+    - mysql
